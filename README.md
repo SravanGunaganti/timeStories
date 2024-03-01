@@ -3,6 +3,7 @@
 1. Clone the repository:
    ```sh
    git clone https://github.com/your-username/your-repository.git
+   cd timeStories
    node server.js
    ```
 
