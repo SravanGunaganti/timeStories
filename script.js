@@ -12,8 +12,10 @@ async function getStories() {
         const element =
             `<a href="${story.link}" targer="_blank" class="story-link">
             <h3 class="story-title">${story.title}</h3>
-    <p class="published-date">${date.toUTCString()}}</p>
-    </a>`;
+            </a>
+            <h3 class="read-time">${story.readTime}</h3>
+    <p class="published-date">${story.timestamp}}</p>
+    `;
         let listItem = document.createElement("li");
         listItem.innerHTML = element;
         listItem.classList.add("latest-item");

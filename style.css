@@ -62,11 +62,11 @@
 .main-container {
     display: inline-grid;
     padding: 20px;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .featured-container {
-    grid-column: span 2 / span 2;;
+    grid-column: span 3 / span 3;;
     margin-left: 50px;
 }
 
@@ -127,24 +127,37 @@
 
 .story-title {
     font-size: 17px;
-    font-family: Courier;
-    color: black;
+    font-family:'Courier New', Courier, monospace;
+   
+    font-weight:normal;
+    font-weight: 500;
 }
 
 .published-date {
     color: gray;
     font-size: 15px;
+    font-weight: lighter;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .story-link{
-    text-decoration: none;
-    display: grid;
-    gap:20px;
+    text-decoration: none; 
+    color: black;
 }
-/* .latest-item{
+.story-link:hover{
+    color:red;
+}
+.latest-item{
     display: grid;
+    gap:5px;
     
-} */
+}
 .latest-container {
-    background-color: yellow;
+    background-color: rgb(227, 226, 226);
     height: 100%;
+}
+.read-time{
+    font-size: 15px;
+    font-family: 'Segoe UI';
+    color:black;
+    font-weight: bold;
 }
